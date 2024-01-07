@@ -14,6 +14,13 @@ function App() {
         gap-3 shadow-lg bg-red-400 px-3 py-3 rounded-3xl">
 
           <button
+          onClick={() => setColor("olive")}
+          className="outline-none px-4 py-1 rounded-full
+          text-black shadow-lg"
+          style={{backgroundColor: "olive"}}
+          >olive</button>
+
+          <button
           onClick={() => setColor("red")}
           className="outline-none px-4 py-1 rounded-full
           text-white shadow-lg"
@@ -23,7 +30,7 @@ function App() {
           <button
           onClick={() => setColor("green")}
           className="outline-none px-4 py-1 rounded-full
-          text-white shadow-lg"
+          text-black shadow-lg"
           style={{backgroundColor: "green"}}
           >Green</button>
 
@@ -37,7 +44,7 @@ function App() {
           <button
           onClick={() => setColor("pink")}
           className="outline-none px-4 py-1 rounded-full
-          text-white shadow-lg"
+          text-black shadow-lg"
           style={{backgroundColor: "pink"}}
           >Pink</button>
 
