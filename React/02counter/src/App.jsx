@@ -14,6 +14,16 @@ function App() {
       setCounter(counter + 1)
     }
     // console.log("Clicked", counter);
+    //                             |  
+    //normally it by writting this v multiple time 
+    //setCounter(counter + 1)
+    //it only update 1 time because of fiber (packet of same instruction)
+    //to update multiple at a time 
+    setCounter((prevCounter) => prevCounter +1)
+    setCounter((prevCounter) => prevCounter +1)
+    setCounter((prevCounter) => prevCounter +1)
+    setCounter((prevCounter) => prevCounter +1)
+    setCounter((prevCounter) => prevCounter +1)
   }
 
   const removeValue = () => {
