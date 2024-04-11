@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* min-height: 100vh; */
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 280px;
+            height: 450px;
+            background-color: white;
+            border-radius: 20px;
+
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .card img{
+            height: 62%;
+            border-radius: 10px;
+            
+        }
+        .card h2{
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .card p{
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <img 
+                src="qrcode.png"
+            />
+            <h2>
+                Improve your front end skilltss by developing Projec
+            </h2>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio veritatis suscipit consequatur ipsum nulla fugiat quod perspiciatis pariatur.
+            </p>
+
+        </div>
+    </div>
+
+</body>
+</html>
